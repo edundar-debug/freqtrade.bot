@@ -47,7 +47,7 @@ class MyFirstStrategyV2(IStrategy):
     # Der Schlüssel ist die Haltedauer in Minuten, der Wert der Mindestgewinn (0.04 = 4 %).
     # Wichtig: Die Schwelle soll mit der Zeit SINKEN. Je länger ein Trade läuft,
     # desto eher nimmt man auch einen kleineren Gewinn mit, statt ewig zu warten.
-    # (Dein Original hatte 3 % -> 15 % -> 8 %, also eine steigende Schwelle am Anfang.)
+    # (V1 hatte 3 % -> 15 % -> 8 %, also eine steigende Schwelle am Anfang.)
     minimal_roi = {
         "0": 0.04,     # sofort: ab 4 % Gewinn verkaufen
         "120": 0.025,  # nach 2 Stunden: ab 2,5 % verkaufen
